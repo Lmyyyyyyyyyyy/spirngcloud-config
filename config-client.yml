@@ -13,7 +13,6 @@ spring:
   application:
     name: springcloud-provider-dept
 
----
 eureka:
   client:
     service-url:
@@ -24,14 +23,12 @@ eureka:
 server:
   port: 8202
 
----
 #spring配置
 spring:
   profiles: test
   application:
     name: springcloud-provider-dept
 
----
 eureka:
   client:
     service-url:
