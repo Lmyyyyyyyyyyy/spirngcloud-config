@@ -5,12 +5,12 @@ spring:
 ---
 server:
   port: 8001
-#mybatis配置
+
 mybatis:
   type-aliases-package: com.lmy.Springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
-#Spring配置
+
 spring:
   profiles: dev
   application:
@@ -22,21 +22,20 @@ spring:
     username: root
     password: 123456
 
-#Eureka
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: springcloud-provider-8001 #修改eureka上的默认描述信息
+    instance-id: springcloud-provider-8001
 
-#info配置
+
 info:
   application:
     app.name: This is lmy APPLICATION
     version: v.1.0.1
     company.name: blog.lmy.com
-#启动所有监控点
+
 management:
   endpoints:
     web:
@@ -49,12 +48,12 @@ management:
 ---
 server:
   port: 8001
-#mybatis配置
+
 mybatis:
   type-aliases-package: com.lmy.Springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
-#Spring配置
+
 spring:
   profiles: test
   application:
@@ -66,21 +65,20 @@ spring:
     username: root
     password: 123456
 
-#Eureka
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    instance-id: springcloud-provider-8001 #修改eureka上的默认描述信息
+    instance-id: springcloud-provider-8001
 
-#info配置
+
 info:
   application:
     app.name: This is lmy APPLICATION
     version: v.1.0.1
     company.name: blog.lmy.com
-#启动所有监控点
+
 management:
   endpoints:
     web:
