@@ -6,7 +6,6 @@ spring:
 server:
   port: 8201
 
----
 #spring配置
 spring:
   profiles: dev
